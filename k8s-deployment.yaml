@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ci-cd-web-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ci-cd-web-app
+  template:
+    metadata:
+      labels:
+        app: ci-cd-web-app
+    spec:
+      containers:
+      - name: web-app
+        image: kirilkirilov96/ci-cd-web-app
+        ports:
+        - containerPort: 80
