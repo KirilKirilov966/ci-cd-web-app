@@ -1,26 +1,25 @@
 pipeline {
     agent any
 
-    // Prevent default SCM checkout to avoid conflicts
     options {
         skipDefaultCheckout(true)
     }
 
     environment {
         DOCKER_IMAGE = "kirilkirilov96/ci-cd-web-app"
+        // Update the path below to your actual kubeconfig file location
+        KUBECONFIG = "C:\\Users\\pearo\\.kube\\config"
     }
 
     stages {
         stage('Checkout Repository') {
             steps {
-                // Explicitly check out the main branch
                 git branch: 'main', url: 'https://github.com/KirilKirilov966/ci-cd-web-app.git'
             }
         }
 
         stage('Build Docker Image') {
             steps {
-                // Use bat instead of sh for Windows
                 bat "docker build -t ${DOCKER_IMAGE} ."
             }
         }
