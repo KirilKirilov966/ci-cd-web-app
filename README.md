@@ -4,7 +4,7 @@ This project is a **fully automated CI/CD pipeline** for deploying a web applica
 
 ---
 
-## **🛠️ Technologies Used**
+##  Technologies Used
 - **Jenkins** – CI/CD automation
 - **Docker** – Containerization
 - **Kubernetes** – Deployment & scaling
@@ -15,7 +15,7 @@ This project is a **fully automated CI/CD pipeline** for deploying a web applica
 
 ---
 
-## **📌 Step 1: Setting Up Jenkins**
+##  Step 1: Setting Up Jenkins
 1️⃣ **Install Jenkins** on your system.
    ```bash
    sudo apt update && sudo apt install jenkins -y
@@ -35,7 +35,7 @@ This project is a **fully automated CI/CD pipeline** for deploying a web applica
 
 ---
 
-## **📌 Step 2: Configure GitHub Integration**
+##  Step 2: Configure GitHub Integration
 1️⃣ **Verify Git is Installed**
    ```bash
    git --version
@@ -48,7 +48,7 @@ This project is a **fully automated CI/CD pipeline** for deploying a web applica
 
 ---
 
-## **📌 Step 3: Set Up Docker & Image Versioning**
+##  Step 3: Set Up Docker & Image Versioning
 1️⃣ **Install Docker**
    ```bash
    sudo apt install docker.io -y
@@ -73,7 +73,7 @@ This project is a **fully automated CI/CD pipeline** for deploying a web applica
 
 ---
 
-## **📌 Step 4: Deploying to Kubernetes**
+## ** Step 4: Deploying to Kubernetes**
 1️⃣ **Set Up Kubernetes Cluster**
    ```bash
    kubectl create namespace devops
@@ -107,7 +107,7 @@ This project is a **fully automated CI/CD pipeline** for deploying a web applica
 
 ---
 
-## **📌 Step 5: Setting Up CI/CD Pipeline in Jenkins**
+## ** Step 5: Setting Up CI/CD Pipeline in Jenkins**
 1️⃣ **Modify `Jenkinsfile` to Include All Stages**
    ```groovy
    pipeline {
@@ -152,7 +152,7 @@ This project is a **fully automated CI/CD pipeline** for deploying a web applica
 
 ---
 
-## **📌 Step 6: Adding Slack & Email Notifications**
+## ** Step 6: Adding Slack & Email Notifications**
 1️⃣ **Install Slack Plugin in Jenkins**
 2️⃣ **Set Up Slack Webhook in Jenkins > Configure System**
 3️⃣ **Modify `Jenkinsfile` for Notifications**
@@ -169,7 +169,7 @@ This project is a **fully automated CI/CD pipeline** for deploying a web applica
 
 ---
 
-## **📌 Step 7: Monitoring Jenkins with Prometheus & Grafana**
+## ** Step 7: Monitoring Jenkins with Prometheus & Grafana**
 1️⃣ **Install Prometheus Plugin in Jenkins**
 2️⃣ **Run Prometheus in Docker**
    ```bash
@@ -183,7 +183,7 @@ This project is a **fully automated CI/CD pipeline** for deploying a web applica
 
 ---
 
-## **✅ Conclusion**
+## ** Conclusion**
 This project successfully implements a **complete CI/CD pipeline** for a **DevOps portfolio**, integrating GitHub, Jenkins, Docker, Kubernetes, and monitoring tools.
 
 🔹 **Automated builds & deployments** 🔹 **Secure credential storage** 🔹 **Live monitoring & notifications**
